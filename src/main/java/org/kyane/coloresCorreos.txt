@@ -1,0 +1,7 @@
+tabBackground=#BBBBBB;
+tabSelect=#E2D5D5;
+tabShowing=#E2D5D5;
+btnFontSize=12px;
+btnBackground=#D8F8B7;
+menuBackground=#B4A5A5;
+menuItem=#8E7F7F;

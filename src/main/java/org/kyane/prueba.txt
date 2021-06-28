@@ -1,0 +1,122 @@
+
+.tab
+{
+    -fx-background-color: #BBBBBB;
+
+.tab
+{
+    -fx-background-color: tabBackground;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color:  #E2D5D5;
+
+.tab
+{
+    -fx-background-color: tabBackground;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color:  tabSelect;
+}
+
+.tab-pane .tab:showing
+{
+    -fx-background-color:  #E2D5D5;
+
+.tab
+{
+    -fx-background-color: tabBackground;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color:  tabSelect;
+}
+
+.tab-pane .tab:showing
+{
+    -fx-background-color:  tabShowing;
+}
+
+.button
+{
+    -fx-font-size: 12px;
+
+.tab
+{
+    -fx-background-color: tabBackground;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color:  tabSelect;
+}
+
+.tab-pane .tab:showing
+{
+    -fx-background-color:  tabShowing;
+}
+
+.button
+{
+    -fx-font-size: btnFontSize;
+    -fx-background-color:  #D8F8B7;
+
+.tab
+{
+    -fx-background-color: tabBackground;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color:  tabSelect;
+}
+
+.tab-pane .tab:showing
+{
+    -fx-background-color:  tabShowing;
+}
+
+.button
+{
+    -fx-font-size: btnFontSize;
+    -fx-background-color:  btnBackground;
+}
+
+.menu-bar
+{
+    -fx-background-color: #B4A5A5;
+
+.tab
+{
+    -fx-background-color: tabBackground;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color:  tabSelect;
+}
+
+.tab-pane .tab:showing
+{
+    -fx-background-color:  tabShowing;
+}
+
+.button
+{
+    -fx-font-size: btnFontSize;
+    -fx-background-color:  btnBackground;
+}
+
+.menu-bar
+{
+    -fx-background-color: menuBackground;
+
+}
+
+.menu-item
+{
+    -fx-text-fill: #8E7F7F;
