@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ibecerram.ControllerAgregarAlumno">
+   <content>
+       <VBox layoutY="14.0" prefHeight="350.0" prefWidth="500.0">
+           <children>
+               <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="500.0" text="Agregar alumno" textAlignment="CENTER">
+                   <font>
+                       <Font size="22.0" />
+                   </font>
+               </Label>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                   <children>
+                       <Label prefHeight="16.0" prefWidth="240.0" text="Matricula">
+                           <HBox.margin>
+                               <Insets left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                       </Label>
+                       <TextField fx:id="txtFieldMatricula" promptText="12345">
+                           <HBox.margin>
+                               <Insets left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                       </TextField>
+                   </children>
+               </HBox>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                   <children>
+                       <Label prefHeight="16.0" prefWidth="240.0" text="Nombre alumno">
+                           <HBox.margin>
+                               <Insets left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                       </Label>
+                       <TextField fx:id="txtFieldNombre" promptText="Maria Hernandez">
+                           <HBox.margin>
+                               <Insets left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                       </TextField>
+                   </children>
+               </HBox>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                   <children>
+                       <Label prefHeight="16.0" prefWidth="240.0" text="Correo electronico">
+                           <HBox.margin>
+                               <Insets left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                       </Label>
+                       <TextField fx:id="txtFieldCorreo" promptText="12345@upv.edu.mx">
+                           <HBox.margin>
+                               <Insets left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                       </TextField>
+                   </children>
+               </HBox>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                   <children>
+                       <Label prefHeight="16.0" prefWidth="240.0" text="Carrera">
+                           <HBox.margin>
+                               <Insets left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                       </Label>
+                       <TextField fx:id="txtFieldCarrera" promptText="ITI">
+                           <HBox.margin>
+                               <Insets left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                       </TextField>
+                   </children>
+               </HBox>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                   <children>
+                       <Label prefHeight="16.0" prefWidth="240.0" text="Nombre del Tutor">
+                           <HBox.margin>
+                               <Insets left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                       </Label>
+                       <TextField fx:id="txtFieldNombreTutor" promptText="Tutor">
+                           <HBox.margin>
+                               <Insets left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                       </TextField>
+                   </children>
+               </HBox>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                   <children>
+                       <Label prefHeight="16.0" prefWidth="240.0" text="Correo electronico tutor">
+                           <HBox.margin>
+                               <Insets left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                       </Label>
+                       <TextField fx:id="txtFieldCorreoTutor" promptText="tutor@upv.edu.mx">
+                           <HBox.margin>
+                               <Insets left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                       </TextField>
+                   </children>
+               </HBox>
+               <Button fx:id="btnAgregarAlumno" mnemonicParsing="false" onAction="#agregarAlumno" text="Agregar">
+                   <VBox.margin>
+                       <Insets bottom="10.0" left="20.0" top="20.0" />
+                   </VBox.margin>
+               </Button>
+           </children>
+           <opaqueInsets>
+               <Insets />
+           </opaqueInsets>
+       </VBox>
+   </content>
+</DialogPane>

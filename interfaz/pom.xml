@@ -4,20 +4,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <artifactId>correosmasivosuii</artifactId>
+    <groupId>com.ibecerram</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
   <groupId>com.ibecerram</groupId>
-  <artifactId>correosmasivosuii</artifactId>
+  <artifactId>interfaz</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>interfaz</module>
-    <module>archivos</module>
-    <module>servicios</module>
-  </modules>
 
-  <!-- GENERAR SUBMÓDULOS -->
-  <packaging>pom</packaging>
-
-
-  <name>correosmasivosuii</name>
+  <name>interfaz</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -28,11 +25,55 @@
   </properties>
 
   <dependencies>
+
+    <!-- DEPENDENCIA DE ARCHIVOS Y SERVICIOS -->
+    <dependency>
+      <groupId>com.ibecerram</groupId>
+      <artifactId>archivos</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.ibecerram</groupId>
+      <artifactId>servicios</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
+    </dependency>
+
+    <!-- DEPENDENCIAS PARA JAVAFX -->
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-controls</artifactId>
+      <version>11</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-fxml</artifactId>
+      <version>11</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-web</artifactId>
+      <version>11.0.2</version>
+    </dependency>
+
+    <!-- DEPENDENCIAS PARA GENERAR PDF -->
+    <dependency>
+      <groupId>com.itextpdf</groupId>
+      <artifactId>html2pdf</artifactId>
+      <version>3.0.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.30</version>
     </dependency>
   </dependencies>
 
@@ -52,6 +93,17 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
+          <configuration>
+            <release>13</release>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>3.0.0</version>
+          <configuration>
+            <mainClass>com.ibecerram.App</mainClass>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
