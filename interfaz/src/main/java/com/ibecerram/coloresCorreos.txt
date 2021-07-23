@@ -1,0 +1,4 @@
+fontFamily="Arial";
+rootBackground=linear-gradient(to right top, #4f0b73, #722c90, #954aae, #ba68cd, #df87ed);
+enviarBackground=#4F0B73;
+menuBackground=#4F0B73;

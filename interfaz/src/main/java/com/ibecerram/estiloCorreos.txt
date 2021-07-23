@@ -1,0 +1,32 @@
+
+.tab
+{
+    -fx-background-color: tabBackground;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color:  tabSelect;
+}
+
+.tab-pane .tab:showing
+{
+    -fx-background-color:  tabShowing;
+}
+
+.button
+{
+    -fx-font-size: btnFontSize;
+    -fx-background-color:  btnBackground;
+}
+
+.menu-bar
+{
+    -fx-background-color: menuBackground;
+
+}
+
+.menu-item
+{
+    -fx-text-fill: menuItem;
+}
